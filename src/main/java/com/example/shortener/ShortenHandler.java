@@ -64,7 +64,7 @@ public class ShortenHandler implements RequestHandler<APIGatewayV2HTTPEvent, API
         } catch (Exception e){
             return json(500, "{\"error\":\"Server error\"}");
         }
-        
+
     }
 
     private APIGatewayV2HTTPResponse json(int status, String body) {
